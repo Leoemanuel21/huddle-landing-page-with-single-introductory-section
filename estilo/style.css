@@ -41,7 +41,6 @@ header{
 
 header > img{
     width: 40%;
-    
 }
 
 main{
@@ -57,16 +56,16 @@ section{
     
 }
 
-section > img{
+#imagem > img{
     width: 80vw;
 }
 
-section > h1{
+#info > h1{
     font-family: var(--fonte-destaque);
     font-size: var(--tamanho-titulo);
 }
 
-section > p{
+#info > p{
     font-family: var(--fonte-corpo);
     font-size: var(--tamanho-parágrafo);
     padding: 1rem 0rem;
@@ -78,12 +77,38 @@ section > p{
     color: var(--Purple-700);
     border-radius: 3rem;
     width: 20rem;
+    font-family: var(--fonte-destaque);
     display: inline-block;
     cursor: pointer;
     box-shadow: 0 .8rem 2rem rgba(0, 0, 0, 0.2);
 }
 
-#social-media-icons{
+#button:hover{
+    background-color: var(--Magenta-400);
     color: white;
-    transition: color 0.3s ease;
+}
+
+#social-media-icons{
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    padding-bottom: 3rem;
+}
+
+#social-media-icons a {
+    color: white;
+    font-size: 2.4rem;
+    border: 1px solid white;
+    border-radius: 50%;
+    width: 4rem;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+#social-media-icons a:hover {
+    color: var(--Magenta-400);
+    border-color: var(--Magenta-400);
 }
