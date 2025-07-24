@@ -73,17 +73,27 @@ section{
 }
 
 #button{
+    display: flex;
+    justify-content: center;
+}
+
+#button a{
     background-color: white;
     color: var(--Purple-700);
+    font-size: 2rem;
     border-radius: 3rem;
     width: 20rem;
+    height: 5rem;
     font-family: var(--fonte-destaque);
-    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     cursor: pointer;
+    text-decoration: none;
     box-shadow: 0 .8rem 2rem rgba(0, 0, 0, 0.2);
 }
 
-#button:hover{
+#button a:hover{
     background-color: var(--Magenta-400);
     color: white;
 }
@@ -96,7 +106,7 @@ section{
     padding-bottom: 3rem;
 }
 
-#social-media-icons a {
+#social-media-icons a{
     color: white;
     font-size: 2.4rem;
     border: 1px solid white;
@@ -109,7 +119,7 @@ section{
     text-decoration: none;
 }
 
-#social-media-icons a:hover {
+#social-media-icons a:hover{
     color: var(--Magenta-400);
     border-color: var(--Magenta-400);
 }
